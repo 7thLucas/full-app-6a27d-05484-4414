@@ -1,0 +1,102 @@
+<style>
+  .mode-landscape .sl-grid { grid-template-columns: repeat(3, 1fr); }
+  .mode-portrait  .sl-grid { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-header { flex-direction: row; align-items: flex-end; justify-content: space-between; }
+  .mode-portrait  .sl-header { flex-direction: column; align-items: flex-start; gap: 0.75rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header row: title + persona chips -->
+    <div class="sl-header flex mb-5 flex-shrink-0">
+      <div>
+        <p class="text-indigo-600 text-xs font-bold tracking-widest uppercase mb-1">Platform Features</p>
+        <h2 class="text-slate-900 font-black text-3xl">Built for Every Music Professional</h2>
+      </div>
+      <div class="flex gap-2">
+        <span class="px-4 py-2 bg-indigo-600 text-white text-xs font-bold rounded-full">Musicians &amp; Producers</span>
+        <span class="px-4 py-2 bg-slate-100 text-slate-500 text-xs font-semibold rounded-full">Marketers &amp; A&amp;R</span>
+        <span class="px-4 py-2 bg-slate-100 text-slate-500 text-xs font-semibold rounded-full">Music Enthusiasts</span>
+      </div>
+    </div>
+
+    <!-- Feature cards grid -->
+    <div class="sl-grid grid gap-3 flex-1">
+
+      <!-- Mood & Emotion -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-100 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-pink-50 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#EC4899" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M20.84 4.61a5.5 5.5 0 0 0-7.78 0L12 5.67l-1.06-1.06a5.5 5.5 0 0 0-7.78 7.78l1.06 1.06L12 21.23l7.78-7.78 1.06-1.06a5.5 5.5 0 0 0 0-7.78z"/>
+          </svg>
+        </div>
+        <h3 class="text-slate-900 font-bold text-sm mb-1">Mood &amp; Emotion</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Identifies the emotional character of the track — happy, melancholic, energetic, dramatic, or calm.</p>
+      </div>
+
+      <!-- Song Structure -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-100 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-indigo-50 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <rect x="3" y="3" width="7" height="7"/><rect x="14" y="3" width="7" height="7"/>
+            <rect x="14" y="14" width="7" height="7"/><rect x="3" y="14" width="7" height="7"/>
+          </svg>
+        </div>
+        <h3 class="text-slate-900 font-bold text-sm mb-1">Song Structure</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Maps the track's architecture — intro, verse, chorus, bridge, and outro — when identifiable.</p>
+      </div>
+
+      <!-- Production Quality (accent card) -->
+      <div class="bg-indigo-600 rounded-2xl p-5 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-white/20 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <polygon points="12 2 15.09 8.26 22 9.27 17 14.14 18.18 21.02 12 17.77 5.82 21.02 7 14.14 2 9.27 8.91 8.26 12 2"/>
+          </svg>
+        </div>
+        <h3 class="text-white font-bold text-sm mb-1">Production Quality</h3>
+        <p class="text-indigo-200 text-xs leading-relaxed">Expert observations on mix clarity, mastering depth, and overall sound design execution.</p>
+      </div>
+
+      <!-- Vocal Analysis -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-100 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-purple-50 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#7C3AED" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M12 1a3 3 0 0 0-3 3v8a3 3 0 0 0 6 0V4a3 3 0 0 0-3-3z"/>
+            <path d="M19 10v2a7 7 0 0 1-14 0v-2"/>
+            <line x1="12" y1="19" x2="12" y2="23"/>
+            <line x1="8" y1="23" x2="16" y2="23"/>
+          </svg>
+        </div>
+        <h3 class="text-slate-900 font-bold text-sm mb-1">Vocal Analysis</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Describes vocal presence, performance character, style, and range observed in the track.</p>
+      </div>
+
+      <!-- Instrumentation -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-100 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-amber-50 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#D97706" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <path d="M9 18V5l12-2v13"/>
+            <circle cx="6" cy="18" r="3"/>
+            <circle cx="18" cy="16" r="3"/>
+          </svg>
+        </div>
+        <h3 class="text-slate-900 font-bold text-sm mb-1">Instrumentation</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Detects instruments present — synthesizers, drums, guitar, strings, bass, and more.</p>
+      </div>
+
+      <!-- Strengths & Improvements -->
+      <div class="bg-white rounded-2xl p-5 border border-slate-100 flex flex-col">
+        <div class="w-9 h-9 rounded-lg bg-emerald-50 flex items-center justify-center mb-3 flex-shrink-0">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="#10B981" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+            <line x1="12" y1="20" x2="12" y2="10"/>
+            <line x1="18" y1="20" x2="18" y2="4"/>
+            <line x1="6" y1="20" x2="6" y2="16"/>
+          </svg>
+        </div>
+        <h3 class="text-slate-900 font-bold text-sm mb-1">Strengths &amp; Improvements</h3>
+        <p class="text-slate-500 text-xs leading-relaxed">Highlights what's working and identifies specific areas for development — actionable for artists.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
