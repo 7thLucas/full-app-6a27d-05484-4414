@@ -1,0 +1,85 @@
+<style>
+  .mode-landscape .sl-metrics { grid-template-columns: repeat(4, 1fr); }
+  .mode-portrait  .sl-metrics { grid-template-columns: repeat(2, 1fr); }
+  .mode-landscape .sl-roi { flex-direction: row; align-items: center; gap: 2.5rem; }
+  .mode-portrait  .sl-roi { flex-direction: column; gap: 1.25rem; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="mb-5 flex-shrink-0">
+      <p class="text-indigo-600 text-xs font-bold tracking-widest uppercase mb-1">Why It Matters</p>
+      <h2 class="text-slate-900 font-black text-3xl">Measurable Impact for Every User</h2>
+    </div>
+
+    <!-- Metric cards -->
+    <div class="sl-metrics grid gap-4 mb-4 flex-shrink-0">
+
+      <div class="bg-indigo-600 rounded-2xl p-5 flex flex-col">
+        <p class="text-indigo-300 text-xs font-semibold mb-2">Analysis Depth</p>
+        <p class="text-white font-black text-5xl leading-none mb-1">16</p>
+        <p class="text-indigo-200 text-xs leading-snug mt-auto pt-2">Distinct dimensions covered in every AI report</p>
+      </div>
+
+      <div class="bg-slate-900 rounded-2xl p-5 flex flex-col">
+        <p class="text-slate-400 text-xs font-semibold mb-2">Time to Insight</p>
+        <p class="text-white font-black text-5xl leading-none mb-1">~2<span class="text-3xl">min</span></p>
+        <p class="text-slate-400 text-xs leading-snug mt-auto pt-2">From upload to full expert-quality report</p>
+      </div>
+
+      <div class="bg-purple-600 rounded-2xl p-5 flex flex-col">
+        <p class="text-purple-200 text-xs font-semibold mb-2">File Formats</p>
+        <p class="text-white font-black text-5xl leading-none mb-1">4</p>
+        <p class="text-purple-200 text-xs leading-snug mt-auto pt-2">MP3, WAV, M4A &amp; AAC accepted</p>
+      </div>
+
+      <div class="bg-pink-600 rounded-2xl p-5 flex flex-col">
+        <p class="text-pink-200 text-xs font-semibold mb-2">Output Style</p>
+        <p class="text-white font-black text-2xl leading-tight mb-1">Plain<br/>English</p>
+        <p class="text-pink-200 text-xs leading-snug mt-auto pt-2">No technical decoding required</p>
+      </div>
+
+    </div>
+
+    <!-- ROI summary block -->
+    <div class="flex-1 bg-slate-50 rounded-2xl p-6 border border-slate-100 flex overflow-hidden">
+      <div class="sl-roi flex w-full">
+        <!-- Copy -->
+        <div class="flex-1">
+          <p class="text-slate-400 text-xs font-bold tracking-widest uppercase mb-2">The ROI Summary</p>
+          <h3 class="text-slate-900 font-black text-xl mb-2 leading-tight">Replace expensive consultants with instant, structured AI intelligence</h3>
+          <p class="text-slate-500 text-sm leading-relaxed">Musicians get producer-quality feedback before release. Labels screen more tracks faster. Marketers identify the right audience without guesswork. Educators use real reports to teach music analysis. Every user saves time and gains objective insight they couldn't access before.</p>
+        </div>
+        <!-- Checklist -->
+        <div class="flex flex-col gap-3 flex-shrink-0">
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-slate-700 text-sm font-medium">Save analysis history &amp; track progress</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-slate-700 text-sm font-medium">Compare multiple tracks side-by-side</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-slate-700 text-sm font-medium">Download PDF reports &amp; share via link</p>
+          </div>
+          <div class="flex items-center gap-3">
+            <div class="w-8 h-8 rounded-lg bg-indigo-100 flex items-center justify-center flex-shrink-0">
+              <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="#4F46E5" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round"><polyline points="20 6 9 17 4 12"/></svg>
+            </div>
+            <p class="text-slate-700 text-sm font-medium">Secure accounts &amp; personal music library</p>
+          </div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
