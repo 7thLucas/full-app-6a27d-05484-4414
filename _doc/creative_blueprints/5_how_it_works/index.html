@@ -1,0 +1,117 @@
+<style>
+  .mode-landscape .sl-steps  { flex-direction: row; align-items: stretch; }
+  .mode-portrait  .sl-steps  { flex-direction: column; }
+  .mode-landscape .sl-step   { flex: 1; }
+  .mode-portrait  .sl-step   { width: 100%; }
+  .mode-landscape .sl-arrow  { display: flex; align-items: center; flex-shrink: 0; }
+  .mode-portrait  .sl-arrow  { display: none; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="h-full flex flex-col p-10">
+
+    <!-- Header -->
+    <div class="text-center mb-7 flex-shrink-0">
+      <p class="text-indigo-600 text-xs font-bold tracking-widest uppercase mb-1">The Process</p>
+      <h2 class="text-slate-900 font-black text-3xl">Three Steps to Expert-Level Insight</h2>
+      <p class="text-slate-500 text-sm mt-1.5">From audio file to comprehensive written report — in minutes</p>
+    </div>
+
+    <!-- Steps row -->
+    <div class="sl-steps flex gap-3 flex-1">
+
+      <!-- Step 1: Upload -->
+      <div class="sl-step bg-slate-50 rounded-2xl p-6 border border-slate-100 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-indigo-600 flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-black text-sm">01</span>
+          </div>
+          <h3 class="text-slate-900 font-black text-lg">Upload Your Track</h3>
+        </div>
+        <!-- Drag-drop mockup -->
+        <div class="bg-white rounded-xl border-2 border-dashed border-indigo-200 p-5 mb-4 flex flex-col items-center justify-center text-center flex-shrink-0">
+          <svg width="28" height="28" viewBox="0 0 24 24" fill="none" stroke="#A5B4FC" stroke-width="1.5" stroke-linecap="round" stroke-linejoin="round" class="mb-2">
+            <path d="M21 15v4a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2v-4"/>
+            <polyline points="17 8 12 3 7 8"/>
+            <line x1="12" y1="3" x2="12" y2="15"/>
+          </svg>
+          <p class="text-slate-400 text-xs font-medium">Drag &amp; drop or browse</p>
+          <p class="text-slate-300 text-xs mt-0.5">MP3 · WAV · M4A · AAC</p>
+        </div>
+        <p class="text-slate-500 text-sm leading-relaxed">Drop any audio file into the secure upload area. A real-time progress indicator confirms your file is being processed.</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="sl-arrow">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </div>
+
+      <!-- Step 2: Analyze -->
+      <div class="sl-step bg-indigo-600 rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-white/20 flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-black text-sm">02</span>
+          </div>
+          <h3 class="text-white font-black text-lg">AI Analyzes</h3>
+        </div>
+        <!-- Processing indicator mockup -->
+        <div class="bg-white/10 rounded-xl p-4 mb-4 flex flex-col gap-3 flex-shrink-0">
+          <div class="flex items-center gap-2.5">
+            <div class="h-1.5 bg-white/70 rounded-full flex-1"></div>
+            <span class="text-indigo-200 text-xs flex-shrink-0">Audio extraction</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="h-1.5 bg-white/50 rounded-full" style="width:72%"></div>
+            <span class="text-indigo-200 text-xs flex-shrink-0">LLM generation</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="h-1.5 bg-white/30 rounded-full" style="width:45%"></div>
+            <span class="text-indigo-200 text-xs flex-shrink-0">Report building</span>
+          </div>
+        </div>
+        <p class="text-indigo-100 text-sm leading-relaxed">The AI engine extracts audio features then passes them through a large language model to generate a 16-dimension written analysis — covering everything from mood to commercial appeal.</p>
+      </div>
+
+      <!-- Arrow -->
+      <div class="sl-arrow">
+        <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="#CBD5E1" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <line x1="5" y1="12" x2="19" y2="12"/>
+          <polyline points="12 5 19 12 12 19"/>
+        </svg>
+      </div>
+
+      <!-- Step 3: Report -->
+      <div class="sl-step bg-slate-900 rounded-2xl p-6 flex flex-col">
+        <div class="flex items-center gap-3 mb-4">
+          <div class="w-9 h-9 rounded-xl bg-white/15 flex items-center justify-center flex-shrink-0">
+            <span class="text-white font-black text-sm">03</span>
+          </div>
+          <h3 class="text-white font-black text-lg">Get Your Report</h3>
+        </div>
+        <!-- Output options mockup -->
+        <div class="bg-white/10 rounded-xl p-4 mb-4 flex flex-col gap-2.5 flex-shrink-0">
+          <div class="flex items-center gap-2.5">
+            <div class="w-2 h-2 rounded-full bg-indigo-400 flex-shrink-0"></div>
+            <span class="text-slate-300 text-xs">Read full report in-app</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-2 h-2 rounded-full bg-pink-400 flex-shrink-0"></div>
+            <span class="text-slate-300 text-xs">Download as PDF</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-2 h-2 rounded-full bg-purple-400 flex-shrink-0"></div>
+            <span class="text-slate-300 text-xs">Share via link</span>
+          </div>
+          <div class="flex items-center gap-2.5">
+            <div class="w-2 h-2 rounded-full bg-emerald-400 flex-shrink-0"></div>
+            <span class="text-slate-300 text-xs">Compare &amp; save to library</span>
+          </div>
+        </div>
+        <p class="text-slate-400 text-sm leading-relaxed">Access your full report instantly. Download as PDF, share with collaborators, or save to your personal library for future reference and comparison.</p>
+      </div>
+
+    </div>
+  </div>
+</section>
