@@ -1,0 +1,74 @@
+<style>
+  .mode-landscape .sl-layout  { flex-direction: row; }
+  .mode-portrait  .sl-layout  { flex-direction: column; }
+  .mode-landscape .sl-problem { width: 50%; }
+  .mode-portrait  .sl-problem { width: 100%; flex: 1; }
+  .mode-landscape .sl-solution { width: 50%; }
+  .mode-portrait  .sl-solution { width: 100%; flex: 1; }
+</style>
+<section class="w-full h-full overflow-auto bg-white">
+  <div class="sl-layout flex h-full">
+
+    <!-- Problem zone (dark) -->
+    <div class="sl-problem bg-slate-900 flex flex-col justify-center p-10">
+      <div class="w-10 h-10 rounded-xl bg-red-500/20 flex items-center justify-center mb-5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="#F87171" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+          <circle cx="12" cy="12" r="10"/>
+          <line x1="12" y1="8" x2="12" y2="12"/>
+          <line x1="12" y1="16" x2="12.01" y2="16"/>
+        </svg>
+      </div>
+      <p class="text-red-400 text-xs font-bold tracking-widest uppercase mb-2">The Problem</p>
+      <h2 class="text-white font-black text-3xl leading-tight mb-6">Expert Music Feedback Is Slow, Expensive &amp; Out of Reach</h2>
+      <ul class="space-y-4">
+        <li class="flex items-start gap-3">
+          <span class="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
+          <p class="text-slate-300 text-sm leading-snug">Audio analysis tools return charts and raw numbers — not actionable insight anyone can use</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
+          <p class="text-slate-300 text-sm leading-snug">Hiring a producer, critic, or A&amp;R consultant is costly and takes weeks, not minutes</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
+          <p class="text-slate-300 text-sm leading-snug">Independent musicians have no structured, objective way to evaluate a track before release</p>
+        </li>
+        <li class="flex items-start gap-3">
+          <span class="text-red-400 font-bold flex-shrink-0 mt-0.5">✕</span>
+          <p class="text-slate-300 text-sm leading-snug">Commercial potential and audience fit remain guesswork without a professional review process</p>
+        </li>
+      </ul>
+    </div>
+
+    <!-- Solution zone (indigo) -->
+    <div class="sl-solution bg-indigo-600 flex flex-col justify-center p-10">
+      <div class="w-10 h-10 rounded-xl bg-white/20 flex items-center justify-center mb-5">
+        <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="white" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <polyline points="20 6 9 17 4 12"/>
+        </svg>
+      </div>
+      <p class="text-indigo-200 text-xs font-bold tracking-widest uppercase mb-2">The Solution</p>
+      <h2 class="text-white font-black text-3xl leading-tight mb-4">One Upload. A Complete Expert Report — Instantly.</h2>
+      <p class="text-indigo-100 text-sm leading-relaxed mb-6">Music Insight Analyzer uses AI to transform any audio file into a comprehensive written report — covering 16 dimensions from mood and genre to production quality, commercial appeal, and improvement notes. Plain English. No jargon.</p>
+      <div class="grid grid-cols-2 gap-3">
+        <div class="bg-white/15 rounded-xl p-4">
+          <p class="text-white font-bold text-sm mb-0.5">16 Dimensions</p>
+          <p class="text-indigo-200 text-xs">Deep analysis per track</p>
+        </div>
+        <div class="bg-white/15 rounded-xl p-4">
+          <p class="text-white font-bold text-sm mb-0.5">Plain English</p>
+          <p class="text-indigo-200 text-xs">No jargon, all insight</p>
+        </div>
+        <div class="bg-white/15 rounded-xl p-4">
+          <p class="text-white font-bold text-sm mb-0.5">PDF Export</p>
+          <p class="text-indigo-200 text-xs">Download &amp; share reports</p>
+        </div>
+        <div class="bg-white/15 rounded-xl p-4">
+          <p class="text-white font-bold text-sm mb-0.5">History &amp; Compare</p>
+          <p class="text-indigo-200 text-xs">Track your progress over time</p>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
